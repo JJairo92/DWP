@@ -24,3 +24,6 @@ Add git username and email to gitconfig file
 ## Remote Add Repository to Server
 	git remote add github [ssh]
 	git pull github master
+
+## Update Information on Server
+	git pull github master
