@@ -5,7 +5,7 @@ Deployment of Web Projects
 
 ## Git Server Installation
 
-Download and still git
+Download and install git
 
 	sudo apt-get install git-core
 
@@ -16,7 +16,7 @@ Update your recent packages
 Add git username and email to gitconfig file
 
 	git config --global user.name "username"
-	git config --global user.email email@email.com
+	git config --global user.email "email@email.com"
 
 ## Clone Repository to Server
 
