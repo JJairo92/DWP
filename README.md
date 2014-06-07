@@ -18,11 +18,9 @@ Add git username and email to gitconfig file
 	git config --global user.name "username"
 	git config --global user.email "email@email.com"
 
-## Clone Repository to Server
+## Initiate git from ip address
+	git init
 
-	git clone [github]
-
-If a folder already exists, remove it, then add the repository again
-	
-	rm -rvf [folderName]
-	git clone [github]
+## Remote Add Repository to Server
+	git remote add github [ssh]
+	git pull github master
