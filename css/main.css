@@ -1,0 +1,36 @@
+/* --------------- Defaults --------------- */
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+h3 {
+	font-family: 'Oleo Script', cursive;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
+
+#projects {
+	margin-left: 14%;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	font-size: 20pt;
+}
+
+h1 a {
+	color: #2a8bd3;
+}
+
+h2 {
+	font-size: 14pt;
+	margin-left: 16%;
+	color: #3B71A0;
+}
