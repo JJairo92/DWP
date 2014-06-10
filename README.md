@@ -7,7 +7,6 @@ Deployment of Web Projects
 
 ## Setting Up Server
 Login as root
-
 	ssh root@[ipAddress]
 
 Add user
