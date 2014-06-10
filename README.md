@@ -7,40 +7,51 @@ Deployment of Web Projects
 
 ## Setting Up Server
 Login as root
+
 	ssh root@[ipAddress]
 
 Add user
+
 	adduser [userName]
 	adduser [userName] sudo
 
 Logout of root and login with new user
+
 	exit
 	ssh [userName]@[ipAddress]
 
 Update and Upgrade Package System
+
 	sudo apt-get update
 	sudo apt-get upgrade
 
 Update package system after upgrade
+
 	sudo apt-get update
 
 Install Apache2
+
 	sudo apt-get install apache2
 
 Update package system
+
 	sudo apt-get update
 
 Install Git
+
 	sudo apt-get install git-core
 
 Update package system
+
 	sudo apt-get update
 
 Add git username and email
+
 	git config --global user.name "username"
 	git config --global user.email email@email.com
 
 Change permissions to /var/www directory
+
 	sudo chown [userName] /var/www
 
 Create another server for production
