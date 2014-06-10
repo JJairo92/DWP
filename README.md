@@ -15,12 +15,12 @@ Deployment of Web Projects
 	adduser [userName]
 	adduser [userName] sudo
 
-Logout of root and login with new user
+3. Logout of root and login with new user
 
 	exit
 	ssh [userName]@[ipAddress]
 
-Update and Upgrade Package System
+4. Update and Upgrade Package System
 
 	sudo apt-get update
 	sudo apt-get upgrade
@@ -29,7 +29,7 @@ Update package system after upgrade
 
 	sudo apt-get update
 
-Install Apache2
+5. Install Apache2
 
 	sudo apt-get install apache2
 
@@ -37,7 +37,7 @@ Update package system
 
 	sudo apt-get update
 
-Install Git
+6. Install Git
 
 	sudo apt-get install git-core
 
@@ -45,16 +45,16 @@ Update package system
 
 	sudo apt-get update
 
-Add git username and email
+7. Add git username and email
 
 	git config --global user.name "username"
 	git config --global user.email email@email.com
 
-Change permissions to /var/www directory
+8. Change permissions to /var/www directory
 
 	sudo chown [userName] /var/www
 
-Create another server for production
+Create another server for production (repeat steps 1-8 for production server)
 
 
 ## Creating Git Hook
