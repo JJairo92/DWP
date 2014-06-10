@@ -5,8 +5,8 @@ Deployment of Web Projects
 # Creating Basic Server
 
 
-## 1. Setting Up Server
-Login as root.
+## Setting Up Server
+Login as root
 	ssh root@[ipAddress]
 
 Add user
@@ -46,7 +46,7 @@ Change permissions to /var/www directory
 Create another server for production
 
 
-## 2. Creating Git Hook
+## Creating Git Hook
 Switch to beginning of file system
 	cd /
 
@@ -74,8 +74,8 @@ Change permissions to post-receive
 	chmod +x post-receive
 
 
-## 3. Pushing to Server
-Inside local git directory (where all files for page are)
+## Pushing to Server
+Go to your local git directory (where all files for page are)
 
 Make sure you are in master branch
 	git checkout master
