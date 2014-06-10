@@ -124,10 +124,10 @@ Push to stage server
 
 	git push [stageServerName] master
 
-Make sure everything is working fine in stage server, test everything, once everything has been tested push to production server
-
-	git push [productionServerName] master
-
 Push all changes to github
 
 	git push
+
+Make sure everything is working fine in stage server, test everything, once everything has been tested push to production server
+
+	git push [productionServerName] master
