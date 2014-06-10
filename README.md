@@ -25,36 +25,36 @@ Deployment of Web Projects
 	sudo apt-get update
 	sudo apt-get upgrade
 
-Update package system after upgrade
+5. Update package system after upgrade
 
 	sudo apt-get update
 
-5. Install Apache2
+6. Install Apache2
 
 	sudo apt-get install apache2
 
-Update package system
+7. Update package system
 
 	sudo apt-get update
 
-6. Install Git
+8. Install Git
 
 	sudo apt-get install git-core
 
-Update package system
+9. Update package system
 
 	sudo apt-get update
 
-7. Add git username and email
+10. Add git username and email
 
 	git config --global user.name "username"
 	git config --global user.email email@email.com
 
-8. Change permissions to /var/www directory
+11. Change permissions to /var/www directory
 
 	sudo chown [userName] /var/www
 
-Create another server for production (repeat steps 1-8 for production server)
+12. Create another server for production (repeat steps 1-11 for production server)
 
 
 ## Creating Git Hook
