@@ -100,3 +100,6 @@ Inside local git directory (where all files for page are)
 
 8. Make sure everything is working fine in stage server, test everything, once everything has been tested push to production server
 	git push [productionServerName] master
+
+9. Push all changes to github
+	git push
