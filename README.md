@@ -7,6 +7,7 @@ Deployment of Web Projects
 
 ## Setting Up Server
 Login as root
+
 	ssh root@[ipAddress]
 
 Add user
@@ -38,7 +39,7 @@ Update package system
 
 Add git username and email
 	git config --global user.name "username"
-	git config --global user.email "email@email.com"
+	git config --global user.email email@email.com
 
 Change permissions to /var/www directory
 	sudo chown [userName] /var/www
