@@ -29,3 +29,5 @@ Add git username and email to gitconfig file
 
 ## Update Information on Server
 	git pull github master
+
+# Staging
