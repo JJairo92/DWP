@@ -6,11 +6,11 @@ Deployment of Web Projects
 
 
 ## Setting Up Server
-Login as root
+1. Login as root
 
 	ssh root@[ipAddress]
 
-Add user
+2. Add user
 
 	adduser [userName]
 	adduser [userName] sudo
@@ -59,58 +59,75 @@ Create another server for production
 
 ## Creating Git Hook
 Switch to beginning of file system
+
 	cd /
 
 Create directory for repos
+
 	sudo mkdir /var/repos
 
 Change permissions to /var/repos directory
+
 	sudo chown [userName] /var/repos
 
 Switch to repos directory and make a new directory for the page created
+
 	cd /var/repos
 	mkdir [pageName].git
 
 Switch to hooks directory; separate working tree and git directory locations
+
 	cd [pageName].git/hooks
 	nano post-receive
 
 Write in editor
+
 	#!/bin/sh
 	GIT_WORK_TREE=/var/www git checkout -f
 
 Save file
 
 Change permissions to post-receive
+
 	chmod +x post-receive
 
 
 ## Pushing to Server
+
 Go to your local git directory (where all files for page are)
 
 Make sure you are in master branch
+
 	git checkout master
 
 Add Stage Server remote
+
 	git remote add [stageServerName] ssh://[userName]@[ipAddress]/var/repos/[pageName].git
 
 Add Production Server remote
+
 	git remote add [productionServerName] ssh://[userName]@[ipAddress]/var/repos/[pageName].git
 
 Check status of files ready to be committed
+
 	git status
 
 Add all files to be committed later
+
 	git add -A
 
 Commit all files
+
 	git commit -m '[Enter message of changes made]'
 
 Push to stage server
+
 	git push [stageServerName] master
 
 Make sure everything is working fine in stage server, test everything, once everything has been tested push to production server
+
 	git push [productionServerName] master
 
 Push all changes to github
+
 	git push
