@@ -75,6 +75,10 @@ Switch to repos directory and make a new directory for the page created
 	cd /var/repos
 	mkdir [pageName].git
 
+Instantiate git
+
+	git init --bare
+
 Switch to hooks directory; separate working tree and git directory locations
 
 	cd [pageName].git/hooks
